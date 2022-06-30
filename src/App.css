@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.App {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  background-color: rgb(211, 196, 216);
+  width: 80vw;
+  height: auto;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.App header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: red;
+}
+.App header h3 {
+  align-self: center;
+  font-size: 22px;
+  color: wheat;
+  text-align: center;
+}
+
+.App header .logout {
+  position: absolute;
+  right: 0;
+  margin: 5px;
+  border: 2px solid black;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(211, 196, 216);
+  color: red;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.App main {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 41px 0;
+}
+.App main .Counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.Counter h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 1px solid red;
+  font-size: 100px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: red;
+}
+.Counter .btn-div {
+  margin-top: 20px;
+}
+.Counter .btn-div button {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Counter .btn-div button:hover {
+  background-color: rgba(88, 14, 107, 0.685);
+}
+
+.form-input {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+.form-input label {
+  font-size: 22px;
+  margin: 5px 0;
+  font-weight: bold;
+  color: rgb(93, 29, 212);
+}
+.form-input .form-control {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px;
+  border: none;
+  outline: 0;
+}
+.form-input .form-control.invalid {
+  background-color: rgb(204, 154, 154);
+  box-shadow: 0 0 1rem 0 red;
+}
+.auth-form h3 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 28px;
+  color: red;
+}
+.auth-form button {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;
+  margin: 10px 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  border: none;
+  outline: 0;
+}
+.auth-form button:disabled {
+  color: rgb(82, 75, 75);
+  background-color: rgba(156, 150, 150, 0.418);
+}
